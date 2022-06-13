@@ -8,6 +8,8 @@
 :root{
     --color-primary: #1f1f1f;
     --color-secondary: #d7d7d7;
+    --color-third: #06c3e8;
+    --color-fourth: #005fbd;
 
 }
 
@@ -75,7 +77,35 @@
     }
 
     #menu{
-        display: none;
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        right: 0px;
+        background: whitesmoke;
+        height: 0px;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+        z-index: 1000;
+
+    }
+
+    #nav.active #menu{
+        height: calc(100vh - 100px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 1px solid #d7d7d7;
+        text-align: center;
+    }
+
+    #menu li{
+        margin-top: 100px;
     }
 }
 
