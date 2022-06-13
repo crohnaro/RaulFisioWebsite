@@ -22,18 +22,24 @@
     background-color: whitesmoke;
 }
 
+
+
 #logo {
     height: 200px;
 }
 
+
+
 #header {
     box-sizing: border-box;
     padding: 1rem;
-    height:130px;
+    height:150px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
 
 #menu {
     display: flex;
@@ -67,32 +73,39 @@
     display: none;
 }
 
-@media (max-width: 600px){
-    #header{
-        justify-content: flex-end;
+@media (max-width: 360px){
+    #header a img{
+        display: none;
     }
+}
+
+@media (max-width: 800px){
+    
 
     #btn-mobile{
+        right: 10px;
+        position: absolute;
         display: block;
+        z-index: 1000;
     }
 
     #menu{
         display: block;
         position: absolute;
         width: 100%;
-        top: 100px;
+        top: -1px;
         right: 0px;
         background: whitesmoke;
         height: 0px;
         transition: .6s;
         visibility: hidden;
         overflow-y: hidden;
-        z-index: 1000;
+        z-index: 999;
 
     }
 
     #nav.active #menu{
-        height: calc(100vh - 100px);
+        height: calc(100vh - 130px);
         visibility: visible;
         overflow-y: auto;
     }
