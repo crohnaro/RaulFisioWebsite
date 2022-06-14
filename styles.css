@@ -88,7 +88,12 @@
     #btn-mobile{
         right: 10px;
         position: absolute;
-        display: block;
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
         z-index: 1000;
     }
 
