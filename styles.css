@@ -27,7 +27,7 @@
 #logo {
     height: 100px;
     position: absolute;
-    left: 0;
+    left: 50px;
 }
 
 #header {
@@ -37,7 +37,6 @@
     height:100px;
     display: flex;
     align-items: center;
-    /*justify-content: space-between;*/
 }
 
 #nav{
@@ -59,18 +58,26 @@
 
 #menu li a{
     text-decoration: none;
-    color: var(--color-primary);
-    font-size: 18px;
     font-weight: bold;
-    transition: ease-out 0.2s;
+    display: inline-block;
+    color: #1f1f1f;
+    transition: ease-in-out 0.2s;
 }
 
-#menu li a:hover{
-    background-image: linear-gradient(to right, #06c3e8, #005fbd );
-    color: whitesmoke;
-    border-radius: 30px;
-    transition: ease-in 0.2s;
+#menu li a::after{
+    content: '';
+    display: block;
+    width: 0;
+    margin-top: 1px;
+    height: 3px;
+    background: linear-gradient(to right, #06c3e8, #005fbd);
+    transition: width .3s;
 }
+
+#menu li a:hover::after{
+    width: 100%;
+}    
+
 
 #btn-mobile{
     display: none;
@@ -166,9 +173,50 @@
 /*************** MAIN SECTION ********************/
 
 .container-main-section{
-    width: 80%;
+    height: calc(100vh - 100px);
+    width: 70%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+#main-section-texts{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 100px;
+    max-width: 400px
+}
+
+
+#main-section-image img{
+    max-width: 400px;
+    opacity: 0.8;
+}
+
+#appointment-button{
+    display:inline-block;
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color:#d7d7d7;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    background-image: linear-gradient(-45deg, #06c3e8, #005fbd, #5faefd );
+    border-radius: 50px 0 50px 0;
+    transition: all ease 1s;
+    background-size: 400% 400%;
+    background-position: 0 0;
+}
+
+#appointment-button:hover{
+    border-radius: 0 50px 0 50px;
+    background-position: 100% 50% ;
+}
+
