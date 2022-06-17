@@ -10,6 +10,8 @@
     --color-secondary: #d7d7d7;
     --color-third: #06c3e8;
     --color-fourth: #005fbd;
+    --color-fifth: #fb9304;
+    --color-six: #a86200;
 
 }
 
@@ -20,15 +22,13 @@
     box-sizing: border-box;
     font-family: 'Resolve', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
     background-color: whitesmoke;
+    
 }
+
+
 
 /*************MENU*****************/
 
-#logo {
-    height: 100px;
-    position: absolute;
-    left: 50px;
-}
 
 #header {
     position: relative;
@@ -46,6 +46,7 @@
 #menu {
     display: flex;
     list-style: none;
+    font-size: 20px;
     gap: .8rem;
 
 }
@@ -68,7 +69,7 @@
     display: block;
     width: 0;
     margin-top: 1px;
-    height: 3px;
+    height: 5px;
     background: linear-gradient(to right, #06c3e8, #005fbd);
     transition: width .3s;
 }
@@ -92,6 +93,7 @@
     
 
     #btn-mobile{
+        top: 33px;
         right: 10px;
         position: absolute;
         display: flex;
@@ -170,27 +172,50 @@
 
 /*************** MAIN SECTION ********************/
 
-.container-main-section{
+#container-main-section-content{
     height: calc(100vh - 100px);
     width: 60%;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    
 }
 
+
 #main-section-texts{
+    
+    line-height: 40px;
+    font-size:26px;
     display:flex;
-    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 100px;
-    max-width: 400px
+    gap: 50px;
 }
+
+#main-content-hello{
+    display: flex;
+    align-items: center;
+}
+
+#main-content-hello::before{
+    content: '';
+    margin-right: 5px;
+    display: inline;
+    height: 5px;
+    width: 30px;
+    background: rgb(6,195,232);
+    background: linear-gradient(90deg, rgba(6,195,232,1) 0%, rgba(0,95,189,1) 53%);
+}
+
+#main-section-paragraph{
+    width: 70%;
+}
+
 
 
 #main-section-image img{
-    max-width: 400px;
+    max-width: 480px;
     opacity: 0.8;
 }
 
@@ -202,7 +227,7 @@
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 4px;
-    color:#d7d7d7;
+    color: whitesmoke;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
@@ -216,5 +241,26 @@
 #appointment-button:hover{
     border-radius: 0 50px 0 50px;
     background-position: 100% 50% ;
+}
+
+.main-section-nome{
+    background: -webkit-linear-gradient(var(--color-third), var(--color-fourth));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1161px){
+    #main-section-image img{
+        display: none
+    }
+
+    #main-section-texts{
+        align-items:center;
+    }
+
+    #main-section-paragraph{
+       width: 100%;
+
+    }
 }
 
