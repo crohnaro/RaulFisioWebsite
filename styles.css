@@ -265,3 +265,32 @@
     }
 }
 
+
+/*********************ABOUT********************/
+
+
+#about{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+#about #video-loop{
+    height: 100%;
+    
+}
+
+#about #video-loop video{
+    height: 100%;
+}
+
+
+#about-me{
+    height: 100%;
+    width: 100%;
+    background: -webkit-linear-gradient(var(--color-third), var(--color-fourth));
+}
+
+
