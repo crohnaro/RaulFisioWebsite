@@ -292,6 +292,7 @@
     width: 100%;
     background-image: linear-gradient(to right, #06c3e8,#4aa5ff,#005fbd);
     display: flex;
+    gap: 50px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
