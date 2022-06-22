@@ -320,6 +320,11 @@ body{
     #about{
         display: block
     }
+    #video-loop{
+        display: none
+    }
 }
+
+
 
 
