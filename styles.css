@@ -144,7 +144,7 @@ body{
         display: block;
         position: absolute;
         width: 100%;
-        top: -1px;
+        font-size: 16px;
         right: 0px;
         background: whitesmoke;
         height: 0px;
@@ -169,7 +169,7 @@ body{
     }
 
     #menu li{
-        margin-top: 100px;
+        margin-top: 60px;
     }
 }
 
@@ -310,9 +310,11 @@ body{
     gap: 50px;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #about-me h1{
+    margin-top: 25px;
     font-size: 50px;
     color: whitesmoke;
     
@@ -321,9 +323,9 @@ body{
 #about-me p{
     font-weight: bold;
     width: 60%;
-    line-height: 50px;
+    line-height: 1.8rem;
     text-justify: justify;
-    font-size: 20px;
+    font-size: 1.1vw;
     color: whitesmoke;
 }
 
@@ -349,6 +351,9 @@ body{
     }
     #video-loop{
         display: none
+    }
+    #about-me p{
+        font-size: 12px;
     }
 }
 
