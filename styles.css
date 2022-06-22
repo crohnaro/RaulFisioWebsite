@@ -21,8 +21,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Resolve', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
-    background-color: whitesmoke;
     
+}
+
+body{
+    background-color: whitesmoke
 }
 
 
@@ -274,7 +277,6 @@
     height: 100vh;
     margin: 0 auto;
     display: flex;
-    padding: 30px;
 }
 
 
@@ -300,11 +302,17 @@
 
 #about-me h1{
     font-size: 50px;
+    color: whitesmoke;
+    
 }
 
 #about-me p{
+    font-weight: bold;
     width: 60%;
-    font-size: 30px;
+    line-height: 50px;
+    text-justify: justify;
+    font-size: 20px;
+    color: whitesmoke;
 }
 
 
