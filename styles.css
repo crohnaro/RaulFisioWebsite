@@ -290,16 +290,54 @@ body{
 #about{
     width: 100%;
     margin: 0 auto;
-    display: flex;
+    position: relative;
+    display: block;
+}
+
+#text-videoloop{
+    z-index: 1;
+}
+
+#video-container{
+    position: relative;
+}
+
+#video-loop{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+#text-videoloop{
+    top:500px ;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #video-loop {
+        width:100%;
+        height: auto;
+    }
 }
 
 
-#about #video-loop{
-    height: 100vh;  
-}
 
-#about #video-loop video{
-    height: 100vh;
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    #video-loop-background {
+        width: 100%;
+        height: 100vh;
+        background: url('imgs/Foto\ do\ caba.png');
+        background-size: cover;
+    }
 }
 
 
