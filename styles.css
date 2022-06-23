@@ -322,6 +322,14 @@ body{
     text-align: center;
 }
 
+#text-videoloop h1{
+    font-size: 70px;
+}
+
+#text-videoloop p{
+    font-size: 1.3rem;
+}
+
 
 #about-me{
     width: 100%;
