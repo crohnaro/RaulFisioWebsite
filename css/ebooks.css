@@ -1,0 +1,12 @@
+#ebooks {
+    height: 100vh;
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#ebookTittle{
+    margin-top: 100px;
+    text-align: center;
+}
