@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Resolve';
+    src: url(Fonts/Resolve-Light.otf) format('truetype'), url(Fonts/Resolve);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --color-primary: #1f1f1f;
+    --color-secondary: #d7d7d7;
+    --color-third: #06c3e8;
+    --color-fourth: #005fbd;
+    --color-fifth: #fb9304;
+    --color-six: #a86200;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Resolve', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+    
+}
+
+body{
+    background-color: whitesmoke
+}
+
+
+
+
+
+
+
+
+
+
+
