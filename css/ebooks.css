@@ -32,6 +32,7 @@
     height: 350px;
     width: 250px;
     border-radius: 3px;
+    transition: .5s;
 }
 
 #cardsContainer{
@@ -43,21 +44,26 @@
 
 .intro{
     text-align: center;
-    height: 200px;
+    color: whitesmoke;
+    height: 70px;
     width: 250px;
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
+    bottom: -2550px;
+    transition: .5s;
     background: rgb(27, 27, 27, .5);
 }
 
 .intro h1{
     margin: 10px;
+    font-size: 30px;
 }
 
 .intro p{
     font-size: 20px;
     margin: 20px;
+    overflow: hidden;
     visibility: hidden;
     opacity: 0;
 }
@@ -71,6 +77,20 @@
 
 #cards:hover{
     cursor: pointer;
+}
+
+#cards:hover .intro{
+    height: 220px;
+    bottom: -2550px ;
+}
+
+#cards:hover .intro p{
+    opacity: 1;
+    visibility: visible;
+}
+
+#card:hover img{
+    transform: scale(1.1) rotate(-3deg);
 }
 
 
