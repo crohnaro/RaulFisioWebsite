@@ -50,7 +50,8 @@
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
-    bottom: -2650px;
+    bottom: -2648px;
+    border-radius: 6px;
     transition: .5s;
     background: rgb(27, 27, 27, .5);
 }
@@ -72,6 +73,7 @@
     height: 450px;
     margin: 50px;
     width: 350px;
+    border-radius: 6px;
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
 }
@@ -82,7 +84,7 @@
 
 #cards:hover .intro{
     height: 220px;
-    bottom: -2650px ;
+    bottom: -2648px ;
 }
 
 #cards:hover .intro p{
