@@ -28,18 +28,27 @@
     
 }
 
-#cards img{
-    height: 450px;
-    width: 350px;
-    border-radius: 3px;
-    transition: .5s;
-}
-
 #cardsContainer{
     display: flex;
     margin-top: 100px;
     align-items: center;
     justify-content: center;
+}
+
+#cards{
+    height: 450px;
+    margin: 50px;
+    width: 350px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+#cards img{
+    height: 450px;
+    width: 350px;
+    border-radius: 3px;
+    transition: .5s;
 }
 
 .intro{
@@ -67,15 +76,6 @@
     overflow: hidden;
     visibility: hidden;
     opacity: 0;
-}
-
-#cards{
-    height: 450px;
-    margin: 50px;
-    width: 350px;
-    border-radius: 6px;
-    box-shadow: 5px 5px 20px black;
-    overflow: hidden;
 }
 
 #cards:hover{
