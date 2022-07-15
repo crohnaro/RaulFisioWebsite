@@ -106,6 +106,10 @@
     .cards{
         height: 400px;
     }
+
+    .cards .cardContent{
+        bottom: -38px;
+    }
 }
 
 
