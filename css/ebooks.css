@@ -1,10 +1,16 @@
-/*#ebooks {
-    height: calc(100vh - 100px) ;
-    width: 70%;
-    margin: 0 auto;
+#ebooks {
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
+#cardsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*
 #ebookTittle{
     margin-top: 100px;
     text-align: center;
