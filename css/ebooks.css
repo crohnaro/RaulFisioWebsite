@@ -1,4 +1,4 @@
-#ebooks {
+/*#ebooks {
     height: calc(100vh - 100px) ;
     width: 70%;
     margin: 0 auto;
@@ -26,74 +26,9 @@
     background: rgb(6,195,232);
     background: linear-gradient(90deg, rgba(6,195,232,1) 0%, rgba(0,95,189,1) 53%);
     
-}
+}*/
 
-#cardsContainer{
-    display: flex;
-    margin-top: 100px;
-    align-items: center;
-    justify-content: center;
-}
 
-#cards{
-    height: 450px;
-    margin: 50px;
-    width: 350px;
-    border-radius: 6px;
-    box-shadow: 5px 5px 20px black;
-    overflow: hidden;
-}
 
-#cards img{
-    height: 450px;
-    width: 350px;
-    border-radius: 3px;
-    transition: .5s;
-}
-
-.intro{
-    text-align: center;
-    color: whitesmoke;
-    height: 70px;
-    width: 350px;
-    padding: 6px;
-    box-sizing: border-box;
-    position: absolute;
-    bottom: -2648px;
-    border-radius: 6px;
-    transition: .5s;
-    background: rgb(27, 27, 27, .5);
-}
-
-.intro h1{
-    margin: 10px;
-    font-size: 30px;
-}
-
-.intro p{
-    font-size: 20px;
-    margin: 20px;
-    overflow: hidden;
-    visibility: hidden;
-    opacity: 0;
-}
-
-#cards:hover{
-    cursor: pointer;
-}
-
-#cards:hover .intro{
-    height: 220px;
-    bottom: -2648px ;
-}
-
-#cards:hover .intro p{
-    opacity: 1;
-    visibility: visible;
-}
-
-#cards:hover img{
-    transform: scale(1.1) rotate(-3deg);
-}
 
 
