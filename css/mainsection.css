@@ -107,3 +107,16 @@
         letter-spacing: 0px;
     }
 }
+
+
+@media (max-height: 768px){
+    #main-section-texts{
+        gap: 20px;
+        font-size: 20px;
+        line-height: 30px
+    }
+
+    #main-section-image img{
+        max-width: 330px
+    }
+}
