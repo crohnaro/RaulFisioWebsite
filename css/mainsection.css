@@ -77,6 +77,24 @@
     -webkit-text-fill-color: transparent;
 }
 
+
+@media (max-width: 1444px){
+    #main-section-texts{
+        width: 40%;
+        line-height: 30px;
+        font-size:18px;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    #main-section-image img{
+        max-width: 400px;
+        opacity: 0.9;
+    }
+}
+
 @media (max-width: 1161px){
     #main-section-image img{
         display: none
