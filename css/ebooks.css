@@ -77,6 +77,8 @@
 
 .cards:hover{
     transform: scale(1.1);
+    -webkit-box-shadow: 40px 50px 100px -36px rgba(0,0,0,0.95); 
+    box-shadow: 40px 50px 100px -36px rgba(0,0,0,0.95);
 }
 
 .cardContent h3{
