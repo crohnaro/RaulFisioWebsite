@@ -1,12 +1,13 @@
 #ebooks {
-    height: calc(100vh - 100px) ;
-    width: 70%;
-    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #ebookTittle{
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -29,71 +30,91 @@
 }
 
 #cardsContainer{
+    margin-top: 50px;
     display: flex;
-    margin-top: 100px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 50px;
 }
 
-#cards{
-    height: 450px;
-    margin: 50px;
-    width: 350px;
-    border-radius: 6px;
-    box-shadow: 5px 5px 20px black;
+.cards{
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 15px 50px -6px rgba(0,0,0,0.79); 
+    box-shadow: 10px 15px 50px -6px rgba(0,0,0,0.79);
+    height: 500px;
+    /*width: 350px;*/
     overflow: hidden;
+    display: flex;
+    position: relative;
+    transition: 250ms ease-in-out;
 }
 
-#cards img{
-    height: 450px;
-    width: 350px;
-    border-radius: 3px;
-    transition: .5s;
+.cards img{
+    height: 100%;
 }
 
-.intro{
-    text-align: center;
-    color: whitesmoke;
-    height: 70px;
-    width: 350px;
-    padding: 6px;
-    box-sizing: border-box;
+.cardContent{
     position: absolute;
-    bottom: -2648px;
-    border-radius: 6px;
-    transition: .5s;
-    background: rgb(27, 27, 27, .5);
-}
-
-.intro h1{
-    margin: 10px;
-    font-size: 30px;
-}
-
-.intro p{
-    font-size: 20px;
-    margin: 20px;
-    overflow: hidden;
-    visibility: hidden;
-    opacity: 0;
-}
-
-#cards:hover{
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    /*width: calc(100% - 40px);*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: whitesmoke;
     cursor: pointer;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.63) 25%);
+    transform: translateY(90px);
+    transition: 250ms ease-in-out;
 }
 
-#cards:hover .intro{
-    height: 220px;
-    bottom: -2648px ;
+.cards:hover .cardContent{
+    transform: translateY(0);
 }
 
-#cards:hover .intro p{
-    opacity: 1;
-    visibility: visible;
+.cards:hover{
+    transform: scale(1.1);
+    -webkit-box-shadow: 40px 50px 100px -36px rgba(0,0,0,0.95); 
+    box-shadow: 40px 50px 100px -36px rgba(0,0,0,0.95);
 }
 
-#cards:hover img{
-    transform: scale(1.1) rotate(-3deg);
+.cardContent h3{
+    font-size: 32px;
 }
+
+.contentHead{
+    position: relative;
+}
+
+.contentHead::after{
+    content: '';
+    height: 4px;
+    width: 50%;
+    background: whitesmoke;
+    position: absolute;
+    bottom: -10px;
+}
+
+
+
+@media (max-width: 800px){
+    #ebooks{
+        height: 100%
+    }
+
+    .cards{
+        height: 400px;
+    }
+
+    .cards .cardContent{
+        bottom: -38px;
+    }
+}
+
+
+
 
 
