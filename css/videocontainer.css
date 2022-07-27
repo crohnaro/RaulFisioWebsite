@@ -1,34 +1,34 @@
-#video-container{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#video-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#video-container video{
-    opacity: 0.5;
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+#video-container video {
+  opacity: 0.5;
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
-#video-container #text-videoloop{
-    position: relative;
-    z-index: 1;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
+#video-container #text-videoloop {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-#text-videoloop h1{
-    font-size: 70px;
-    color: whitesmoke;
+#text-videoloop h1 {
+  font-size: 70px;
+  color: whitesmoke;
 }
 
-#text-videoloop p{
-    font-size: 1.3rem;
+#text-videoloop p {
+  font-size: 1.3rem;
 }
