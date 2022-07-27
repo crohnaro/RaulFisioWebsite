@@ -1,120 +1,120 @@
 #ebooks {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#ebookTittle{
-    margin-top: 50px;
-    text-align: center;
+#ebookTittle {
+  margin-top: 50px;
+  text-align: center;
 }
 
-#ebookTittle h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
+#ebookTittle h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
 }
 
-#ebookTittle h1::before{
-    content: '';
-    margin-right: 5px;
-    display: inline;
-    height: 5px;
-    width: 30px;
-    background: rgb(6,195,232);
-    background: linear-gradient(90deg, rgba(6,195,232,1) 0%, rgba(0,95,189,1) 53%);
-    
+#ebookTittle h1::before {
+  content: "";
+  margin-right: 5px;
+  display: inline;
+  height: 5px;
+  width: 30px;
+  background: rgb(6, 195, 232);
+  background: linear-gradient(
+    90deg,
+    rgba(6, 195, 232, 1) 0%,
+    rgba(0, 95, 189, 1) 53%
+  );
 }
 
-#cardsContainer{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-bottom: 50px;
+#cardsContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 50px;
 }
 
-.cards{
-    border-radius: 20px;
-    -webkit-box-shadow: 10px 15px 50px -6px rgba(0,0,0,0.79); 
-    box-shadow: 10px 15px 50px -6px rgba(0,0,0,0.79);
-    height: 500px;
-    /*width: 350px;*/
-    overflow: hidden;
-    display: flex;
-    position: relative;
-    transition: 250ms ease-in-out;
+.cards {
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 15px 50px -6px rgba(0, 0, 0, 0.79);
+  box-shadow: 10px 15px 50px -6px rgba(0, 0, 0, 0.79);
+  height: 500px;
+  /*width: 350px;*/
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  transition: 250ms ease-in-out;
 }
 
-.cards img{
+.cards img {
+  height: 100%;
+}
+
+.cardContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  /*width: calc(100% - 40px);*/
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: whitesmoke;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 0, 0, 0.63) 25%
+  );
+  transform: translateY(90px);
+  transition: 250ms ease-in-out;
+}
+
+.cards:hover .cardContent {
+  transform: translateY(0);
+}
+
+.cards:hover {
+  transform: scale(1.1);
+  -webkit-box-shadow: 40px 50px 100px -36px rgba(0, 0, 0, 0.95);
+  box-shadow: 40px 50px 100px -36px rgba(0, 0, 0, 0.95);
+}
+
+.cardContent h3 {
+  font-size: 32px;
+}
+
+.contentHead {
+  position: relative;
+}
+
+.contentHead::after {
+  content: "";
+  height: 4px;
+  width: 50%;
+  background: whitesmoke;
+  position: absolute;
+  bottom: -10px;
+}
+
+@media (max-width: 800px) {
+  #ebooks {
     height: 100%;
+  }
+
+  .cards {
+    height: 400px;
+  }
+
+  .cards .cardContent {
+    bottom: -38px;
+  }
 }
-
-.cardContent{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 20px;
-    /*width: calc(100% - 40px);*/
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    color: whitesmoke;
-    cursor: pointer;
-    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.63) 25%);
-    transform: translateY(90px);
-    transition: 250ms ease-in-out;
-}
-
-.cards:hover .cardContent{
-    transform: translateY(0);
-}
-
-.cards:hover{
-    transform: scale(1.1);
-    -webkit-box-shadow: 40px 50px 100px -36px rgba(0,0,0,0.95); 
-    box-shadow: 40px 50px 100px -36px rgba(0,0,0,0.95);
-}
-
-.cardContent h3{
-    font-size: 32px;
-}
-
-.contentHead{
-    position: relative;
-}
-
-.contentHead::after{
-    content: '';
-    height: 4px;
-    width: 50%;
-    background: whitesmoke;
-    position: absolute;
-    bottom: -10px;
-}
-
-
-
-@media (max-width: 800px){
-    #ebooks{
-        height: 100%
-    }
-
-    .cards{
-        height: 400px;
-    }
-
-    .cards .cardContent{
-        bottom: -38px;
-    }
-}
-
-
-
-
-
