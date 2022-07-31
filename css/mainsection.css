@@ -2,7 +2,7 @@
 
 #container-main-section-content {
   height: calc(100vh - 100px);
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -10,7 +10,7 @@
 }
 
 #main-section-texts {
-  width: 30%;
+  margin-left: 60px;
   line-height: 30px;
   font-size: 22px;
   display: flex;
@@ -43,14 +43,20 @@
   width: 100%;
 }
 
+#main-section-texts h1 {
+  font-size: 50px;
+  line-height:50px
+}
+
 #main-section-image img {
-  max-width: 520px;
+  max-width: 920px;
   opacity: 0.8;
+  margin-top: 68px;
 }
 
 #appointment-button {
   display: inline-block;
-  width: 100%;
+  width: 400px;
   height: 60px;
   line-height: 60px;
   font-size: 18px;
@@ -74,13 +80,11 @@
 
 .social-menu {
   margin-top: 50px;
-  width: 100%;
   display: flex;
   align-items: center;
 }
 
 .social-menu ul {
-  width: 100%;
   padding: 0;
   margin: 0;
   display: flex;
@@ -144,7 +148,6 @@
 
 @media (max-width: 1444px) {
   #main-section-texts {
-    width: 40%;
     line-height: 30px;
     font-size: 18px;
     display: flex;
@@ -154,12 +157,23 @@
   }
 
   #main-section-image img {
-    max-width: 400px;
-    opacity: 0.9;
+    max-width: 750px;
+    opacity: 0.8;
+    margin-top: 210px;
+  }
+}
+
+@media (max-width: 768px){
+  #main-section-texts h1 {
+    font-size: 40px;
   }
 }
 
 @media (max-width: 1161px) {
+
+  #main-section-paragraph {
+    text-align: center;
+  }
   #main-section-image img {
     display: none;
   }
@@ -174,8 +188,9 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   #main-section-texts {
+    margin-left: 0;
     line-height: 1.3rem;
     font-size: 16px;
     display: flex;
@@ -186,6 +201,7 @@
 
   #appointment-button {
     letter-spacing: 0px;
+    width: 90%
   }
 }
 
@@ -197,6 +213,6 @@
   }
 
   #main-section-image img {
-    max-width: 330px;
+    max-width: 690px;
   }
 }
