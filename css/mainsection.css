@@ -2,25 +2,26 @@
 
 #container-main-section-content {
   height: calc(100vh - 100px);
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #main-section-texts {
-  width: 40%;
-  line-height: 40px;
-  font-size: 26px;
+  width: 30%;
+  line-height: 30px;
+  font-size: 22px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 35px;
 }
 
 #main-content-hello {
   display: flex;
+  margin-top: 150px;
   align-items: center;
 }
 
@@ -43,8 +44,8 @@
 }
 
 #main-section-image img {
-  max-width: 480px;
-  opacity: 0.9;
+  max-width: 520px;
+  opacity: 0.8;
 }
 
 #appointment-button {
@@ -71,17 +72,69 @@
   background-position: 100% 50%;
 }
 
-#social-icons{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
+.social-menu {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.img-icons{
-    height: 30px;
+.social-menu ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
+.social-menu ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social-menu ul li .fa {
+  font-size: 30px;
+  line-height: 60px;
+  transition: 0.3s;
+  color: #000;
+}
+
+.social-menu ul li .fa:hover {
+  color: #fff;
+}
+
+.social-menu ul li a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.social-menu ul li a:hover {
+  transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #0077b5;
+}
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #b23121;
+}
 
 .main-section-nome {
   background: -webkit-linear-gradient(var(--color-third), var(--color-fourth));

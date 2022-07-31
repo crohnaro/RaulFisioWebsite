@@ -72,7 +72,7 @@
   background-image: linear-gradient(
     to bottom,
     transparent,
-    rgba(0, 0, 0, 0.63) 25%
+    rgba(0, 0, 0, 0.63) 35%
   );
   transform: translateY(90px);
   transition: 250ms ease-in-out;
