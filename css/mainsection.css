@@ -189,6 +189,10 @@
 }
 
 @media (max-width: 400px) {
+
+  #main-content-hello{
+    margin-top: 0;
+  }
   #main-section-texts {
     margin-left: 0;
     line-height: 1.3rem;
@@ -207,6 +211,7 @@
 
 @media (max-height: 768px) {
   #main-section-texts {
+    margin-left: 0;
     gap: 20px;
     font-size: 20px;
     line-height: 30px;
