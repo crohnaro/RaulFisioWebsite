@@ -60,7 +60,12 @@
   width: 85rem;
   height: 75rem;
   border-radius: 60%;
-  background-color: #0077b5;
+  background: rgb(6, 195, 232);
+  background: linear-gradient(
+    90deg,
+    rgba(6, 195, 232, 1) 0%,
+    rgba(0, 95, 189, 1) 53%
+  );
   position: absolute;
   right: -25em;
   bottom: -35rem;
