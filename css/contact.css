@@ -91,6 +91,7 @@
     font-size: 1.1rem;
     background-color: #005fbd;
     border-radius: 10px;
+    transition: all .3s;
     color: whitesmoke;
     cursor: pointer;
     outline: none;
@@ -98,8 +99,9 @@
 }
 
 #submit:hover{
-    background-color: whitesmoke;
-    color: #005fbd;
+    background-color: #004487;
+    color: whitesmoke;
+    transition: all .3s;
 }
 
 @media screen and (max-width: 880px){
