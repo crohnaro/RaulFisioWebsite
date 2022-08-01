@@ -12,7 +12,7 @@
 }
 
 #main-section-texts {
-  width: 25%;
+  width: 50%;
   margin-left: 10px;
   line-height: 30px;
   font-size: 22px;
@@ -43,7 +43,7 @@
 }
 
 #main-section-paragraph {
-  width: 100%;
+  width: 50%;
 }
 
 #main-section-texts h1 {
