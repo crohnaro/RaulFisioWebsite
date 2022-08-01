@@ -111,10 +111,11 @@
   }
 
   .cards {
-    height: 400px;
+    height: 300px;
   }
 
   .cards .cardContent {
-    bottom: -38px;
+    bottom: -18px;
+    font-size: 12px
   }
 }
