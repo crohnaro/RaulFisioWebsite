@@ -166,10 +166,12 @@
 @media (max-width: 768px){
   #main-section-texts h1 {
     font-size: 40px;
+    text-align: center;
   }
 }
 
 @media (max-width: 1161px) {
+
 
   #main-section-paragraph {
     text-align: center;
@@ -181,6 +183,7 @@
   #main-section-texts {
     width: 100%;
     align-items: center;
+    margin-left: 0;
   }
 
   #main-section-paragraph {
@@ -188,7 +191,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
 
   #main-content-hello{
     margin-top: 0;
@@ -216,6 +219,8 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  
 
   #main-section-image img {
     max-width: 690px;
