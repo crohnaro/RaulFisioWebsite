@@ -8,15 +8,18 @@
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
     />
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/mainsection.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/videocontainer.css" />
     <link rel="stylesheet" href="css/ebooks.css" />
-    <link rel="stylesheet" href="css/contact.css">
-    
+    <link rel="stylesheet" href="css/contact.css" />
+
     <title>Raul Fisio</title>
   </head>
   <body>
@@ -46,8 +49,8 @@
         <h1 class="main-section-nome">Raul Oliveira</h1>
         <div id="main-section-paragraph">
           <p>
-            Sou Fisioterapeuta Funcional,
-            e atuo a mais de 10 anos. Faça seu agendamento!
+            Sou Fisioterapeuta Funcional, e atuo a mais de 10 anos. Faça seu
+            agendamento!
           </p>
         </div>
         <a id="appointment-button" href="#">Agendamento</a>
@@ -76,7 +79,46 @@
 
       <div id="main-section-image">
         <img src="imgs/Foto do caba.png" alt="" />
-        <div id="background-image"></div>
+        <div id="background-image">
+          <div>
+            <svg
+              class="waves"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 24 150 28"
+              preserveAspectRatio="none"
+              shape-rendering="auto"
+            >
+              <defs>
+                <path
+                  id="gentle-wave"
+                  d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                />
+              </defs>
+              <g class="parallax">
+                <use
+                  xlink:href="#gentle-wave"
+                  x="58"
+                  y="3"
+                  fill="rgba(125,230,255,0.7)"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="58"
+                  y="5"
+                  fill="rgba(255,255,255,0.5)"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="58"
+                  y="7"
+                  fill="rgba(145,190,250,0.8)"
+                />
+                <use xlink:href="#gentle-wave" x="58" y="10" fill="#fff" />
+              </g>
+            </svg>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -178,15 +220,14 @@
         <div id="left"></div>
         <div id="right">
           <h2>Contato</h2>
-          <input type="text" class="field" placeholder="Digite seu nome">
-          <input type="email" class="field" placeholder="Digite seu email">
-          <input type="text" class="field" placeholder="Digite seu telefone">
+          <input type="text" class="field" placeholder="Digite seu nome" />
+          <input type="email" class="field" placeholder="Digite seu email" />
+          <input type="text" class="field" placeholder="Digite seu telefone" />
           <textarea class="field area" placeholder="Mensagem"></textarea>
           <button id="submit">Enviar</button>
         </div>
       </div>
     </section>
-    
 
     <footer></footer>
   </body>
