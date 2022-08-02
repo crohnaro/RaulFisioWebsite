@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 35px;
+  gap: 15px;
 }
 
 #main-content-hello {
@@ -45,7 +45,6 @@
 #main-section-paragraph {
   width: 50%;
 }
-
 #main-section-texts h1 {
   font-size: 80px;
   line-height: 80px;
@@ -69,13 +68,14 @@
   position: absolute;
   right: -25em;
   bottom: -35rem;
+  overflow: hidden;
 }
 
 #main-section-image img {
   z-index: 2;
   position: absolute;
-  max-width: 920px;
-  top: 110px;
+  width: 50%;
+  bottom: 0px;
   right: -60px
 }
 
@@ -169,6 +169,38 @@
   -webkit-text-fill-color: transparent;
 }
 
+.waves {
+  overflow: hidden;
+  position:relative;
+  width: 100%;
+  height:100vh;
+  right:0;
+  top: 31rem;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
 @media (max-width: 1444px) {
   #main-section-texts {
     line-height: 30px;
@@ -178,10 +210,7 @@
     flex-wrap: wrap;
   }
 
-  #main-section-image img {
-    max-width: 750px;
-    margin-top: 210px;
-  }
+  
 }
 
 @media (max-width: 768px) {
@@ -189,15 +218,26 @@
     font-size: 40px;
     text-align: center;
   }
+
+  .waves {
+    height:60px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
 }
 
 @media (max-width: 1525px) {
   #background-image{
     width:90%;
   }
+  
+}
+
+@media (min-width:1160px) and (max-width: 1256px){
   #main-section-image img {
-    max-width: 832px;
-    margin-top: 58px;
+    width: 65%;
   }
 }
 
@@ -253,10 +293,6 @@
   #background-image{
     width:80%;
   }
-  #main-section-image img {
-    max-width: 750px;
-    margin-top: 58px;
-  }
 }
 
 @media (max-height: 768px) {
@@ -268,16 +304,13 @@
   }
 
   #main-section-image img {
-    max-width: 690px;
+    width: 45%;
   }
 
   #background-image{
     width:80%;
   }
-  #main-section-image img {
-    max-width: 750px;
-    margin-top: 58px;
-  }
+
 
   .social-menu {
     margin-top: 10px;
@@ -292,7 +325,14 @@
     margin-top: 0;
   }
 
-  #main-section-image img{
-    top: -50px
+}
+
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
   }
 }
+
