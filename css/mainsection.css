@@ -1,7 +1,7 @@
 /*************** MAIN SECTION ********************/
 
 #container-main-section-content {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 70px);
   width: 100%;
   position: relative;
   margin: 0 auto;
@@ -75,7 +75,7 @@
   z-index: 2;
   position: absolute;
   max-width: 920px;
-  top: 70px;
+  top: 110px;
   right: -60px
 }
 
@@ -176,7 +176,6 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 50px;
   }
 
   #main-section-image img {
@@ -197,9 +196,13 @@
     width:90%;
   }
   #main-section-image img {
-    max-width: 750px;
+    max-width: 832px;
     margin-top: 58px;
   }
+}
+
+#main-section-texts h1{
+  font-size: 60px;
 }
 
 @media (max-width: 1161px) {
@@ -281,5 +284,15 @@
   }
   #main-section-texts h1 {
     font-size: 40px;
+  }
+}
+
+@media (max-height: 680px) {
+  #main-content-hello{
+    margin-top: 0;
+  }
+
+  #main-section-image img{
+    top: -50px
   }
 }
