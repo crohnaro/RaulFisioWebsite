@@ -311,21 +311,20 @@
   #background-image{
     width:80%;
   }
-
-
   .social-menu {
     margin-top: 10px;
   }
   #main-section-texts h1 {
     font-size: 40px;
   }
-}
-
-@media (max-height: 680px) {
   #main-content-hello{
     margin-top: 0;
   }
 
+  #about{
+    height: 100%;
+  }
+  
 }
 
 @keyframes move-forever {
