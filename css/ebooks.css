@@ -60,7 +60,7 @@
 
 .cardContent {
   position: absolute;
-  bottom: 0;
+  bottom: -60px;
   left: 0;
   padding: 20px;
   /*width: calc(100% - 40px);*/
@@ -79,7 +79,7 @@
 }
 
 .cards:hover .cardContent {
-  transform: translateY(0);
+  transform: translateY(-60px);
 }
 
 .cards:hover {
@@ -115,7 +115,6 @@
   }
 
   .cards .cardContent {
-    bottom: -18px;
     font-size: 12px
   }
 }
