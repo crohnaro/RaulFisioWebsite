@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 #ebookTittle {
@@ -34,7 +35,7 @@
 }
 
 #cardsContainer {
-  width: 100%;
+  width: 60%;
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -48,6 +49,7 @@
   border-radius: 20px;
   -webkit-box-shadow: 10px 15px 50px -6px rgba(0, 0, 0, 0.79);
   height: 500px;
+  width: 100%;
   overflow: hidden;
   position: relative;
   transition: 250ms ease-in-out;
