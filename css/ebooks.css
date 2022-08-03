@@ -35,7 +35,6 @@
 }
 
 #cardsContainer {
-  width: 60%;
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -49,7 +48,6 @@
   border-radius: 20px;
   -webkit-box-shadow: 10px 15px 50px -6px rgba(0, 0, 0, 0.79);
   height: 500px;
-  width: 100%;
   overflow: hidden;
   position: relative;
   transition: 250ms ease-in-out;
@@ -57,7 +55,6 @@
 
 .cards img {
   height: 100%;
-  width: 100%
 }
 
 .cardContent {
@@ -116,5 +113,21 @@
 
   .cards .cardContent {
     font-size: 12px
+  }
+}
+
+@media (max-width: 468px) {
+  #cardsContainer {
+    width: 60%;
+  }
+  .cards {
+    width: 100%;
+  }
+  .cards img {
+    width: 100%;
+  }
+
+  .cardContent{
+    display: none;
   }
 }
