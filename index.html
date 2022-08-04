@@ -21,10 +21,21 @@
     <link rel="stylesheet" href="css/videocontainer.css" />
     <link rel="stylesheet" href="css/ebooks.css" />
     <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/preloader.css" />
+    <link rel="stylesheet" href="css/location.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/glider.min.css" />
+    <link
+      rel="stylesheet"
+      href="https:cdnjs.cloudflare.com/ajax.libs/font-awesome/5.11.2/css/all.min.css"
+    />
 
     <title>Raul Fisio</title>
   </head>
   <body>
+    <div class="spinner-container">
+      <div class="spinner"></div>
+    </div>
     <header id="header">
       <nav id="nav">
         <button
@@ -50,7 +61,7 @@
         <p id="main-content-hello">Olá! Me chamo</p>
         <h1 class="main-section-nome">Raul Oliveira</h1>
         <div id="main-section-paragraph">
-          <p>Sou Fisioterapeuta Clínico e docente e atuo há mais de 10 anos.</p>
+          <p>Sou Fisioterapeuta Clínico e docentee atuo há mais de 10 anos.</p>
           <p>Juntos encontraremos uma solução.</p>
           <p>Faça seu agendamento!</p>
         </div>
@@ -150,28 +161,45 @@
           Global pelo Reequilíbrio Proprioceptivo e Muscular, a Posturologia
           Clínica e outras formações voltadas ao tratamento da dor.
         </p>
-
         <p>
           Rotineiramente tenho participado de congressos, simpósios e cursos
           para meu aperfeiçoamento. Isso faz toda a diferença no resultado final
           de minhas consultas, em meu consultório em Itaperuna.
         </p>
-
         <p>
           Por diversas vezes fui privilegiado em palestrar sobre as temáticas
           voltadas à saúde do trabalhador, atuação profissional e
           interdisciplinaridade, ortopedia, traumatologia, tratamento da dor e
           de outros conteúdos voltados à saúde e qualidade de vida.
         </p>
-
         <p>
           Para que o suporte aos pacientes seja integral, tenho atendido em
           Itaperuna e região. desenvolvi também alguns e-books para orientação e
           entendimento sobre diversos casos voltados à saúde geral.
         </p>
-
         <p>Espero lhe ajudar, esse é o meu maior propósito!</p>
       </div>
+      <div id="slider-container">
+        <button aria-label="Previous" class="glider-prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="glider-contain">
+          <div class="glider">
+            <div class="card-images-glider"><img src="imgs/glider1.png" /></div>
+            <div class="card-images-glider"><img src="imgs/glider2.png" /></div>
+            <div class="card-images-glider"><img src="imgs/glider3.png" /></div>
+            <div class="card-images-glider"><img src="imgs/glider4.png" /></div>
+            <div class="card-images-glider"><img src="imgs/glider5.png" /></div>
+            <div class="card-images-glider"><img src="imgs/glider6.png" /></div>
+            <div class="card-images-glider"><img src="imgs/glider7.png" /></div>
+            <div class="card-images-glider"><img src="imgs/glider1.png" /></div>
+          </div>
+        </div>
+        <button aria-label="Next" class="glider-next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      
     </section>
 
     <section id="ebooks">
@@ -231,11 +259,36 @@
       </div>
     </section>
 
-    <footer></footer>
+    <section id="location">
+      <div id="map">
+        <div id="header">
+          <h5>Localização</h5>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0658301189105!2d-46.652983984475654!3d-23.566079067652865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1641905406554!5m2!1spt-BR!2sbr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <h5>© 2021 Barber Shop Todos direitos reservados CrohnaroDev.</h5>
+    </footer>
   </body>
   <script src="js/menuhamburguer.js"></script>
   <script
     src="https://kit.fontawesome.com/66aa7c98b3.js"
     crossorigin="anonymous"
   ></script>
+  <script src="js/preloader.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    charset="utf-8"
+  ></script>
+  <script src="js/glider.min.js"></script>
+  <script src="js/gliderapp.js"></script>
 </html>
