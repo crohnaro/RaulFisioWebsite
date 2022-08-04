@@ -1,0 +1,33 @@
+#location {
+  height: 100vh;
+  padding: 100px 0;
+  background-image: url(../imgs/location-img.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#map iframe {
+  width: 70%;
+}
+
+#location #header {
+  background: rgb(6, 195, 232);
+  background: linear-gradient(
+    90deg,
+    rgba(6, 195, 232, 1) 0%,
+    rgba(0, 95, 189, 1) 53%
+  );
+  width: 70%;
+  color: whitesmoke;
+}
