@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #map {
@@ -18,7 +19,7 @@
 }
 
 #map iframe {
-  width: 70%;
+  width: 60%;
 }
 
 #location #header {
@@ -28,6 +29,6 @@
     rgba(6, 195, 232, 1) 0%,
     rgba(0, 95, 189, 1) 53%
   );
-  width: 70%;
+  width: 60%;
   color: whitesmoke;
 }
