@@ -1,0 +1,14 @@
+#footer {
+  height: 80px;
+  width: 100%;
+  background: rgb(6, 195, 232);
+  background: linear-gradient(
+    90deg,
+    rgba(6, 195, 232, 1) 0%,
+    rgba(0, 95, 189, 1) 53%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}

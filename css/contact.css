@@ -1,118 +1,124 @@
-#contact{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    padding: 20px 100px;
+#contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px 100px;
 }
 
-#contact::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
+#contact::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../imgs/Logo_Colorido.png");
+  background-size: cover;
+  z-index: -1;
+  filter: blur(30px);
+}
+
+#contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+  background-color: whitesmoke;
+}
+
+#left {
+  height: 60%;
+  background: url("../imgs/Logo_Colorido.png");
+  background-size: cover;
+}
+
+#right {
+  padding: 25px 40px;
+}
+
+#right h2 {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+#right h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #005fbd;
+}
+
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus {
+  background-color: whitesmoke;
+  border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+.area {
+  min-height: 150px;
+  resize: none;
+}
+
+#submit {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: #005fbd;
+  border-radius: 10px;
+  transition: all 0.3s;
+  color: whitesmoke;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+#submit:hover {
+  background-color: #004487;
+  color: whitesmoke;
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 880px) {
+  #contact {
+    padding: 30px;
+  }
+  #contact-box {
+    grid-template-columns: 1fr;
+  }
+
+  #left {
+    height: 200px;
+  }
+}
+
+@media (max-height: 600px) {
+  #contact {
     height: 100%;
-    background: url("../imgs/Logo_Colorido.png");
-    background-size: cover;
-    z-index: -1;
-    filter: blur(30px);
-}
-
-#contact-box{
-    max-width: 850px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    text-align: center;
-    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
-    background-color: whitesmoke;
-}
-
-#left{
-    height:60%;
-    background: url("../imgs/Logo_Colorido.png");
-    background-size: cover;
-}
-
-#right{
-    padding: 25px 40px;
-}
-
-#right h2{
-    position: relative;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
-
-#right h2::after{
-    content:'';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color: #005fbd;
-}
-
-.field{
-    width: 100%;
-    padding: 0.5rem 1rem;
-    outline: none;
-    border: none;
-    border: 2px solid rgba(0, 0, 0, 0.);
-    background-color: rgba(230,230,230, 0.6);
-    font-size: 1.1rem;
-    margin-bottom: 22px;
-    transition: .3s;
-}
-
-.field:hover{
-    background-color: rgba(0, 0, 0, 0.1)
-}
-
-.field:focus{
-    background-color: whitesmoke;
-    border: 2px solid rgba(30,85,250,0.47);
-}
-
-.area{
-    min-height: 150px;
-    resize: none;
-}
-
-#submit{
-    width: 100%;
-    padding: 0.5rem 1rem;
-    font-size: 1.1rem;
-    background-color: #005fbd;
-    border-radius: 10px;
-    transition: all .3s;
-    color: whitesmoke;
-    cursor: pointer;
-    outline: none;
-    border: none;
-}
-
-#submit:hover{
-    background-color: #004487;
-    color: whitesmoke;
-    transition: all .3s;
-}
-
-@media screen and (max-width: 880px){
-    #contact{
-        padding: 30px;
-    }
-    #contact-box{
-        grid-template-columns: 1fr;
-    }
-
-    #left{
-        height: 200px;
-    }
+  }
 }
