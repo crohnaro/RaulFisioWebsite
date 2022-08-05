@@ -24,10 +24,10 @@
     <link rel="stylesheet" href="css/preloader.css" />
     <link rel="stylesheet" href="css/location.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/glider.min.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
     <link
       rel="stylesheet"
-      href="https:cdnjs.cloudflare.com/ajax.libs/font-awesome/5.11.2/css/all.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
 
     <title>Raul Fisio</title>
@@ -48,10 +48,11 @@
           <span id="hamburguer"></span>
         </button>
         <ul id="menu" role="menu">
-          <li><a href="/">Agendamento</a></li>
-          <li><a href="/">Sobre Mim</a></li>
-          <li><a href="/">E-books</a></li>
-          <li><a href="/">Contatos</a></li>
+          <li><a href="#container-main-section-content">Agendamento</a></li>
+          <li><a href="#about">Sobre Mim</a></li>
+          <li><a href="#ebooks">E-books</a></li>
+          <li><a href="#contact">Contatos</a></li>
+          <li><a href="#location">Localização</a></li>
         </ul>
       </nav>
     </header>
@@ -65,23 +66,16 @@
           <p>Juntos encontraremos uma solução.</p>
           <p>Faça seu agendamento!</p>
         </div>
-        <a id="appointment-button" href="#">Agendamento</a>
+        <a id="appointment-button" href="https://wa.link/ht108s">Agendamento</a>
         <div class="social-menu">
           <ul>
             <li>
-              <a href="https://www.instagram.com/imsanketbodke/" target="blank"
+              <a href="https://www.instagram.com/fisio_raul/" target="blank"
                 ><i class="fa fa-instagram"></i
               ></a>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/in/sanket-bodake-995b5b205/"
-                target="blank"
-                ><i class="fa fa-linkedin"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://codepen.io/sanketbodke"
+              <a href="mailto:oliveiraraul.fisio@gmail.com"
                 ><i class="fa fa-envelope" target="blank"></i
               ></a>
             </li>
@@ -179,27 +173,39 @@
         </p>
         <p>Espero lhe ajudar, esse é o meu maior propósito!</p>
       </div>
-      <div id="slider-container">
-        <button aria-label="Previous" class="glider-prev">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <div class="glider-contain">
-          <div class="glider">
-            <div class="card-images-glider"><img src="imgs/glider1.png" /></div>
-            <div class="card-images-glider"><img src="imgs/glider2.png" /></div>
-            <div class="card-images-glider"><img src="imgs/glider3.png" /></div>
-            <div class="card-images-glider"><img src="imgs/glider4.png" /></div>
-            <div class="card-images-glider"><img src="imgs/glider5.png" /></div>
-            <div class="card-images-glider"><img src="imgs/glider6.png" /></div>
-            <div class="card-images-glider"><img src="imgs/glider7.png" /></div>
-            <div class="card-images-glider"><img src="imgs/glider1.png" /></div>
+      <div class="container">
+        <div id="tittle-container">
+          <h1>Fotos</h1>
+        </div>
+        <div id="containerPadding">
+          <div class="container__img-holder">
+            <img src="imgs/glider1.png" alt="Image" />
+          </div>
+          <div class="container__img-holder">
+            <img src="imgs/glider2.png" alt="Image" />
+          </div>
+          <div class="container__img-holder">
+            <img src="imgs/glider3.png" alt="Image" />
+          </div>
+          <div class="container__img-holder">
+            <img src="imgs/glider4.png" alt="Image" />
+          </div>
+          <div class="container__img-holder">
+            <img src="imgs/glider5.png" alt="Image" />
+          </div>
+          <div class="container__img-holder">
+            <img src="imgs/glider6.png" alt="Image" />
           </div>
         </div>
-        <button aria-label="Next" class="glider-next">
-          <i class="fas fa-chevron-right"></i>
-        </button>
       </div>
-      
+
+      <div class="img-popup">
+        <img src="" alt="Popup Image" />
+        <div class="close-btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
     </section>
 
     <section id="ebooks">
@@ -250,11 +256,13 @@
         <div id="left"></div>
         <div id="right">
           <h2>Contato</h2>
-          <input type="text" class="field" placeholder="Digite seu nome" />
-          <input type="email" class="field" placeholder="Digite seu email" />
-          <input type="text" class="field" placeholder="Digite seu telefone" />
-          <textarea class="field area" placeholder="Mensagem"></textarea>
-          <button id="submit">Enviar</button>
+          <form action="https://formsubmit.co/oliveiraraul.fisio@gmail.com" method="post">
+            <input type="text" name="name" class="field" placeholder="Digite seu nome" required />
+            <input type="email" name="email" class="field" placeholder="Digite seu email" required />
+            <input type="text" name="phone" class="field" placeholder="Digite seu telefone" required />
+            <textarea class="field area" name="comments" placeholder="Mensagem" required></textarea>
+            <button id="submit" name="submit" value="Send">Enviar</button>
+          </form>  
         </div>
       </div>
     </section>
@@ -265,7 +273,7 @@
           <h5>Localização</h5>
         </div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0658301189105!2d-46.652983984475654!3d-23.566079067652865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1641905406554!5m2!1spt-BR!2sbr"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d930.0014103814036!2d-41.8980569707628!3d-21.191934848707195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc60487eed61ad%3A0x1934e5581bde7c46!2sR.%20Algenor%20Boechath%2C%2020%20-%20Gov.%20Roberto%20Silveira%2C%20Itaperuna%20-%20RJ%2C%2028300-000!5e0!3m2!1spt-BR!2sbr!4v1659713375429!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
           width="600"
           height="450"
           style="border: 0"
@@ -289,6 +297,8 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
     charset="utf-8"
   ></script>
-  <script src="js/glider.min.js"></script>
-  <script src="js/gliderapp.js"></script>
+  <script src="js/gallerypopup.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/scrollreveal.js"></script>
 </html>
