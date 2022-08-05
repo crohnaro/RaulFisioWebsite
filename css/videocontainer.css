@@ -8,7 +8,7 @@
 }
 
 #video-container video {
-  opacity: 0.5;
+  opacity: 0.9;
   position: absolute;
   object-fit: cover;
   width: 100%;
