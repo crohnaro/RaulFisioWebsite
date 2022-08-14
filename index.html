@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="css/swiper.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      href="css/swiper.css"
     />
 
     <title>Raul Fisio</title>
@@ -165,44 +165,22 @@
         <div id="tittle-container">
           <h1>Fotos</h1>
         </div>
-        <div id="containerPadding">
-          <div class="container__img-holder">
-            <img src="imgs/glider1.png" alt="Image" />
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imgs/glider1.png" alt="Image" /></div>
+            <div class="swiper-slide"><img src="imgs/glider2.png" alt="Image" /></div>
+            <div class="swiper-slide"><img src="imgs/glider3.png" alt="Image" /></div>
+            <div class="swiper-slide"><img src="imgs/glider4.png" alt="Image" /></div>
+            <div class="swiper-slide"><img src="imgs/glider5.png" alt="Image" /></div>
+            <div class="swiper-slide"> <img src="imgs/glider6.png" alt="Image" /></div>
+            <div class="swiper-slide"><img src="imgs/glider8.jpg" alt="Image" /></div>
+            <div class="swiper-slide"><img src="imgs/glider9.jpg" alt="Image" /></div>
+            <div class="swiper-slide"><img src="imgs/glider10.jpg" alt="Image" /></div>
           </div>
-          <div class="container__img-holder">
-            <img src="imgs/glider2.png" alt="Image" />
-          </div>
-          <div class="container__img-holder">
-            <img src="imgs/glider3.png" alt="Image" />
-          </div>
-          <div class="container__img-holder">
-            <img src="imgs/glider4.png" alt="Image" />
-          </div>
-          <div class="container__img-holder">
-            <img src="imgs/glider5.png" alt="Image" />
-          </div>
-          <div class="container__img-holder">
-            <img src="imgs/glider6.png" alt="Image" />
-          </div>
-          <div class="container__img-holder">
-            <img src="imgs/glider8.jpg" alt="Image" />
-          </div>
-          <div class="container__img-holder">
-            <img src="imgs/glider9.jpg" alt="Image" />
-          </div>
-          <div class="container__img-holder">
-            <img src="imgs/glider10.jpg" alt="Image" />
-          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-      </div>
-
-      <div class="img-popup">
-        <img src="" alt="Popup Image" />
-        <div class="close-btn">
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-      </div>
     </section>
 
     <section id="ebooks">
@@ -328,7 +306,19 @@
     charset="utf-8"
   ></script>
   <script src="js/gallerypopup.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="js/scrollreveal.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </html>
