@@ -1,6 +1,10 @@
 
 window.sr = ScrollReveal({reset : true});
 
+//COURSE SECTION
+sr.reveal('#button-course', { delay: 980 });
+sr.reveal('#img-course', { delay: 900 });
+
 //MAIN SECTION SR
 
 sr.reveal('#main-content-hello', { delay: 900 });
