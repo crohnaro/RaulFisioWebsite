@@ -1,0 +1,27 @@
+#new-course {
+  height: calc(100vh - 70px);
+  padding: 100px 0;
+  background-image: url(../imgs/BG\ -\ Slides\ -\ FISIO\ RAUL\ -\ blue\ liso.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#course-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#course-container img{
+    width: 60%;
+}
+
+@media (max-width:768px){
+    #course-container img{
+        width: 90%;
+    }
+}
