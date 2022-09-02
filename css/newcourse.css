@@ -10,10 +10,24 @@
 }
 
 #course-container{
+    width: 80%;
     display: flex;
+    gap: 100px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#course-container button{
+    cursor: pointer;
+    font-size: 22px;
+    width: 50%;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color:#FFA200 ;
+    color: black;
 }
 
 #course-container img{
